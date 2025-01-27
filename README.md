@@ -41,7 +41,7 @@ Make sure you have signed into your Azure account from Visual Studio Code and ac
     "variables": {},
     "resources": [],
     "outputs": {}
-}
+    }
 
 
 ### Deploy the ARM Template
@@ -52,12 +52,13 @@ To deploy the ARM template to Azure, follow these steps:
 
  **Sign in to Azure** using the following command:
 
-    ```powershell
+  ```powershell
     Connect-AzAccount
-
+```
 Set the default subscription for the session:
 
-    ```powershell
+  ```powershell
     Get-AzSubscription
     $context = Get-AzSubscription -SubscriptionId {Your subscription ID}
     Set-AzContext $context
+```
